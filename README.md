@@ -1,4 +1,4 @@
-# SYS 6018 Data Mining Final Project Report - Fatality Analysis
+# Data Mining Final Project Report - Fatality Analysis
 # Elena Gillis (emg3sc), Kanika Dawar (kd2hr), Varshini Sriram (vs4vx)
 
 ## 1. The Problem
@@ -136,3 +136,6 @@ table that summarized accidents and fatalities per cause and saw that most fatal
 in speeding crashes, on junctions or intersections, and involved driving under intoxication. However, when we
 sorted these values by the ratio of the number of fatalities and accidents we saw that most fatalities per crash
 occurred in crashes involving police pursuit, large trucks, interstate crashes, and drowsy or intoxicated drivers.
+
+(us-car-crash-analysis/images/EDA1.png)
+(us-car-crash-analysis/images/EDA2.png)
