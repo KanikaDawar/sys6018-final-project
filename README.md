@@ -175,8 +175,8 @@ To understand and explore the relationships between the features and to look for
 performed Dimensionality Reduction - Principal Component Analysis and t-Distributed Stochastic Neighbor
 Embedding and visualized the outputs for the two methods.
 
-(![EDA](images/TSNE.PNG)
-(![EDA](images/PCA.PNG)
+![EDA](images/TSNE.PNG)
+![EDA](images/PCA.PNG)
 
 We noticed that t-SNE has tried to separate the different points confirming that the data is separable and the
 classification methods should work well for the data.
@@ -220,15 +220,15 @@ kernel, we could not do it for a lot of values as the system was not able to per
 a dataset. We did 80:20 split to form the train and test dataset. We found out that the radial kernel
 performed much better than the linear kernel at cost =1 and gamma = 1 with 99.39% accuracy.
 
-![AUC variation for SVM linear kernel](images/SVM - linear.png?raw=true "Title")
+![AUC variation for SVM linear kernel](images/SVMlinear.png?raw=true "Title")
 
-![Confusion Matrix for SVM radial](images/SVM radial.png?raw=true "Title")
+![Confusion Matrix for SVM radial](images/SVMradial.png?raw=true "Title")
 
 ### Time Series Forecasting
 To project the total fatal crashes for the year 2018, we performed a time series analysis of the total fatal
 crashes from the year 1982 to 2017.
 
-(![Time Series Plot](images/Time Series.PNG?raw=true "Title")
+(![Time Series Plot](images/TimeSeries.PNG?raw=true "Title")
 
 Fitting an ARIMA model requires the series to be stationary. A series is said to be stationary when its mean,
 variance, and autocovariance are time invariant. The Augmented Dickey-Fuller Test (ADF test) was used to
@@ -239,7 +239,7 @@ for the years 2016-2017. The optimal parameters for the fitted ARIMA model were 
 and autoregressive of lag one. We checked for the model adequacy by examining the ACF and PACF plots for
 model residuals and found that there was no significant autocorrelations present.
 
-(![Residuals and ACF/PACF plots](images/Residuals.PNG?raw=true "Title")
+![Residuals and ACF/PACF plots](images/Residuals.PNG?raw=true "Title")
 
 The RMSE after evaluating the model was found to be 885.0426. The ARIMA was refit for the entire data and
 forecasting was done for the year 2018. The total fatal crashes will decrease to 34046 for the year 2018
