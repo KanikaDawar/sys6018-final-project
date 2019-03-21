@@ -190,7 +190,7 @@ The resulting accuracy from random forest was 99.81% with only 61 observations i
 36 observations in medium severity misclassified. All high severity accidents were predicted with 100%
 accuracy.
 
-(![Confusion Matrix for Random Forest](images/RF.PNG?raw=true "Title")
+![Confusion Matrix for Random Forest](images/RF.PNG?raw=true "Title")
 
 ● Similarly, we used the gbm library to run boosting algorithm on the data. We split the data into test and
 train sets of equal length, ran the gbm model with multinomial distribution and chose the result that
@@ -198,7 +198,7 @@ gives us the highest classification probability. This model was also run on 50 t
 accuracy of 99.82%, misclassifying only 44 observations with low severity, 47 observations with
 medium severity, and predicting high severity observations with perfect accuracy.
 
-(![Confusion Matrix for Boosting](images/Boosting.PNG?raw=true "Title")
+![Confusion Matrix for Boosting](images/Boosting.png?raw=true "Title")
 
 ● A KNN model was then used to perform classification with the important variables as found from the
 results of Random Forest Algorithm. Data splitting - train and validation sets was carried out to evaluate
@@ -207,7 +207,7 @@ cross-validation and the optimum k value (k = 23) was chosen using the Log Loss 
 response variable suffered from severe class imbalances. The chosen model was tested on the
 validation data and the classification accuracy obtained was 94.07%
 
-(![Confusion Matrix for KNN](images/KNN.PNG?raw=true "Title")
+![Confusion Matrix for KNN](images/KNN.png?raw=true "Title")
 
 ● We used support vector machines to perform classification of severity level of fatalities using the 59
 variables we found significant by performing random forest importance function. We used the e1071
@@ -220,9 +220,9 @@ kernel, we could not do it for a lot of values as the system was not able to per
 a dataset. We did 80:20 split to form the train and test dataset. We found out that the radial kernel
 performed much better than the linear kernel at cost =1 and gamma = 1 with 99.39% accuracy.
 
-(![AUC variation for SVM linear kernel](images/SVM - linear.PNG?raw=true "Title")
+![AUC variation for SVM linear kernel](images/SVM - linear.png?raw=true "Title")
 
-(![Confusion Matrix for SVM radial](images/SVM radial.PNG?raw=true "Title")
+![Confusion Matrix for SVM radial](images/SVM radial.png?raw=true "Title")
 
 ### Time Series Forecasting
 To project the total fatal crashes for the year 2018, we performed a time series analysis of the total fatal
