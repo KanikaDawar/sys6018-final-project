@@ -137,7 +137,7 @@ in speeding crashes, on junctions or intersections, and involved driving under i
 sorted these values by the ratio of the number of fatalities and accidents we saw that most fatalities per crash
 occurred in crashes involving police pursuit, large trucks, interstate crashes, and drowsy or intoxicated drivers.
 
-(![EDA](images/EDA1.PNG) (![EDA](images/EDA2.PNG)
+![EDA](images/EDA1.PNG) ![EDA](images/EDA2.PNG)
 
 In exploring data from the vehicles datasets we have observed that the passenger cars formed the majority of
 the fatal accidents with front-end collisions. Drivers of the commercial vehicles in the accidents had an invalid
@@ -145,7 +145,7 @@ commercial driving license and ten percent of drivers overall had invalid licens
 of vehicle they were driving, among which 50% of the motorcycle accidents involved a driver with an invalid
 license type. Around 25% of our data involved accidents that resulted from speeding.
 
-(![EDA](images/EDA3.PNG)
+![EDA](images/EDA3.PNG)
 
 From the dataset on persons involved in each accident, we have seen that the majority of the accidents
 distributed by age were clustered around young drivers (particularly 20-24 years old). In addition, 50% of the
@@ -228,7 +228,7 @@ performed much better than the linear kernel at cost =1 and gamma = 1 with 99.39
 To project the total fatal crashes for the year 2018, we performed a time series analysis of the total fatal
 crashes from the year 1982 to 2017.
 
-(![Time Series Plot](images/TimeSeries.PNG?raw=true "Title")
+![Time Series Plot](images/TimeSeries.PNG?raw=true "Title")
 
 Fitting an ARIMA model requires the series to be stationary. A series is said to be stationary when its mean,
 variance, and autocovariance are time invariant. The Augmented Dickey-Fuller Test (ADF test) was used to
