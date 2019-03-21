@@ -13,13 +13,13 @@ the understanding of the effectiveness of motor vehicle safety standards and hig
 ● Fatality Analysis Reporting System (FARS) is a nationwide census providing public yearly data
 regarding fatal injuries suffered in motor vehicle traffic crashes. This data is critical to understanding the
 characteristics of the environment, trafficway, vehicles, and persons involved in the crash.
-● We aim to analyze data ranging from 2015-2017 obtained from National Highway Traffic Safety
+<br />● We aim to analyze data ranging from 2015-2017 obtained from National Highway Traffic Safety
 Administration (NHTSA) website to help understand the factors contributing to car crashes and
 subsequently influence the system to reduce the number of motor vehicle crashes and deaths on our
 nation's highways. The data provides us with details of variables such as no of pax, drunk drivers,
 vision, speed, etc which play an important role in helping us understand the chances of a fatal accident
 occurring and what can and should be changed to impact the outcome.
-● External events such as national holidays, dance and music concerts, etc. which have not been
+<br />● External events such as national holidays, dance and music concerts, etc. which have not been
 explicitly taken into account could potentially have a significant impact and lead to bias in the analysis
 
 ### Normative Analysis
@@ -31,19 +31,19 @@ regulations and safety conditions leading to fewer accidents and subsequently, t
 
 ### Impact
 ● Fewer casualties in vehicle crashes
-● Reduction of economic loss
+<br />● Reduction of economic loss
 
 ## 2. Objectives and Metrics
 
 ### Objectives
 ● Predict total fatal crashes for the year 2018
-● Classify a fatal car crash into levels of accident severity - low/mid/high based on number of casualties
-● Understand the most important factors for a car crash involving fatalities
+<br />● Classify a fatal car crash into levels of accident severity - low/mid/high based on number of casualties
+<br />● Understand the most important factors for a car crash involving fatalities
 
 ### Metrics
 ● Mean Square error in prediction
-● Misclassification error
-● Relevance of factors identified with general government consensus
+<br />● Misclassification error
+<br />● Relevance of factors identified with general government consensus
 
 ## 3. State-of-the-Art
 ● The following data sources were already investigated for traffic fatality analysis: NHTSA’s FARS,
@@ -51,12 +51,12 @@ FastFARS (FF), and Monthly Fatality Counts (MFC). FARS is a census of fatal traf
 program is an Early Fatality Notification System to capture fatality counts from States more rapidly and
 in real-time. The MFC data provides monthly fatality counts by State through sources that are
 independent of the FastFARS or FARS systems.
-● Data mining methods such as Time Series Analysis and Regression Techniques were applied to the
+<br />● Data mining methods such as Time Series Analysis and Regression Techniques were applied to the
 traffic data to predict fatality rates, to understand where crashes happen most often, what conditions
 correlate with collisions and which road users are most vulnerable. [8]
-● The methods have been evaluated using MSE. Ridge Regression proved to be the most successful
+<br />● The methods have been evaluated using MSE. Ridge Regression proved to be the most successful
 method in terms of predicting fatalities. ARIMA model worked best for forecasting fatality rates. [8]
-● It’s hard to predict the fatalities in a car crash because of the wide number of factors involved. Even if
+<br />● It’s hard to predict the fatalities in a car crash because of the wide number of factors involved. Even if
 we identify the factors, it is hard to anticipate the predicted conditions. Incorporating the external factors
 and enforcing safety regulations that are coherent with the factors identified makes it a difficult problem.
 [9] [10]
@@ -66,16 +66,16 @@ and enforcing safety regulations that are coherent with the factors identified m
 ### Hypotheses
 ● We anticipate that factors such as usage of safety equipment, drunk driving, seasonality and light
 conditions are the most common factors contributing to increased fatality rates.
-● Data mining methods such as Decision Trees (Random Forest) will produce a better classification
+<br />● Data mining methods such as Decision Trees (Random Forest) will produce a better classification
 accuracy compared to K-Nearest Neighbors and Support Vector Machine when applied to the data to
 predict accident severity.
-● Adding a seasonality factor to the model developed for monthly fatality will help explain peaks in
+<br />● Adding a seasonality factor to the model developed for monthly fatality will help explain peaks in
 fatalities and better outlier detection.
 
 ### Data
 ● FARS - Reporting system by the NHTSA for fatal accidents - now provided for public use in the form of
 CSV files and SAS database with additional information about specific environment variables.
-● Bias in the data: Data might not accurately represent all crashes, another layer of non-fatal accidents
+<br />● Bias in the data: Data might not accurately represent all crashes, another layer of non-fatal accidents
 would have given more ground threshold in terms of the importance of factors and severity of an
 accident. The lack of familiarity and understanding with the reporting system might have lead to
 unintentional human errors (missing data, incomprehensible values, duplication, etc.).
@@ -83,21 +83,21 @@ unintentional human errors (missing data, incomprehensible values, duplication, 
 ### Methods
 ● Random Forest, K-Nearest Neighbors and Support Vector Machine for classification of the accident
 severity level.
-● Time Series Modeling for total fatal crashes prediction.
-● Mostly only Exploratory Data Analysis has been done on traffic data and so there are not enough
+<br />● Time Series Modeling for total fatal crashes prediction.
+<br />● Mostly only Exploratory Data Analysis has been done on traffic data and so there are not enough
 resources to tell if any of the above methods have been applied to make predictions. We aim to explore
 all the methods learnt in class and pick the method with the best outcome.
 
 ### Evaluation Setup
 ● Using Random Forest we perform feature selection and identify the most important variables that
 contribute to higher numbers of fatalities.
-● Using time series forecasting, we will predict the number of fatal crashes annually and compare the
+<br />● Using time series forecasting, we will predict the number of fatal crashes annually and compare the
 result for 2018 when the FARS data is released.
-● We will use cross-validation to check for misclassification error while predicting accident severity (ROC
+<br />● We will use cross-validation to check for misclassification error while predicting accident severity (ROC
 curves, TPR and FPR trade-off).
-● Ideally, we would have liked to classify severity into an extra level - a non-severe accident, but dataset
+<br />● Ideally, we would have liked to classify severity into an extra level - a non-severe accident, but dataset
 does not have that level because measurement by FARS is only for fatal accidents.
-● Given that all methods work with minimal error, the models should be good predictors of the outcome
+<br />● Given that all methods work with minimal error, the models should be good predictors of the outcome
 and, serve our initial intentions of contributing to understanding the factors leading to fatal crashes.
 
 ## 5. Approach and Results
@@ -263,26 +263,27 @@ in practice.
 ## References
 [1] Crashstats.nhtsa.dot.gov. (2018). [online] Available at:
 https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812633 [Accessed 10 Dec. 2018].
-[2] Catalog.data.gov. (2018). Fatality Analysis Reporting System ( FARS ) - FTP Raw Data - Data.gov . [online] Available
+<br />[2] Catalog.data.gov. (2018). Fatality Analysis Reporting System ( FARS ) - FTP Raw Data - Data.gov . [online] Available
 at: https://catalog.data.gov/dataset/fatality-analysis-reporting-system-fars-ftp-raw-data-8f8bd [Accessed 10 Dec. 2018].
-[3] Dalinina, R. (2018). Introduction to Forecasting with ARIMA in R . [online] Datascience.com. Available at:
+<br />[3] Dalinina, R. (2018). Introduction to Forecasting with ARIMA in R . [online] Datascience.com. Available at:
 https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials [Accessed 10
 Dec. 2018].
-[4] Medium. (2018). DAY 10: Dimensionality Reduction with PCA and t-SNE in R . [online] Available at:
+<br />[4] Medium. (2018). DAY 10: Dimensionality Reduction with PCA and t-SNE in R . [online] Available at:
 https://medium.com/@TheDataGyan/dimensionality-reduction-with-pca-and-t-sne-in-r-2715683819 [Accessed 10 Dec.
 2018].
-[5] Rdocumentation.org. (2018). parallelSVM function | R Documentation . [online] Available at:
+<br />[5] Rdocumentation.org. (2018). parallelSVM function | R Documentation . [online] Available at:
 https://www.rdocumentation.org/packages/parallelSVM/versions/0.1-9/topics/parallelSVM [Accessed 10 Dec. 2018].
-[6] R-bloggers. (2018). Improve SVM Tuning through Parallelism . [online] Available at:
+<br />[6] R-bloggers. (2018). Improve SVM Tuning through Parallelism . [online] Available at:
 https://www.r-bloggers.com/improve-svm-tuning-through-parallelism/ [Accessed 10 Dec. 2018].
-[7] NHTSA. (2018). Research & Data . [online] Available at: https://www.nhtsa.gov/research-data [Accessed 10 Dec.
+<br />[7] NHTSA. (2018). Research & Data . [online] Available at: https://www.nhtsa.gov/research-data [Accessed 10 Dec.
 2018].
-[8] Etd.ohiolink.edu. (2018). [online] Available at:
+<br />[8] Etd.ohiolink.edu. (2018). [online] Available at:
 https://etd.ohiolink.edu/!etd.send_file?accession=bgsu1491397270639027&disposition=inline [Accessed 10 Dec. 2018].
-[9] Edmonds, L. (2018). U.S. Fatal Collision Data Set (2015) . [online] Rstudio-pubs-static.s3.amazonaws.com. Available
+<br />[9] Edmonds, L. (2018). U.S. Fatal Collision Data Set (2015) . [online] Rstudio-pubs-static.s3.amazonaws.com. Available
 at: https://rstudio-pubs-static.s3.amazonaws.com/234137_75fb6fe28ba646f1a5c4ac3826e294fb.html [Accessed 10 Dec.
 2018].
-[10] Kaggle.com. (2018). MDST FARS Dataset Challenge | Kaggle . [online] Available at:
+<br />[10] Kaggle.com. (2018). MDST FARS Dataset Challenge | Kaggle . [online] Available at:
 https://www.kaggle.com/c/mdst-fars [Accessed 11 Dec. 2018].
-Link to the data used in the project :
+
+<br />Link to the data used in the project :
 ftp:// ftp.nhtsa.dot.gov/fars/
