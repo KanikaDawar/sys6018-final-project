@@ -137,5 +137,5 @@ in speeding crashes, on junctions or intersections, and involved driving under i
 sorted these values by the ratio of the number of fatalities and accidents we saw that most fatalities per crash
 occurred in crashes involving police pursuit, large trucks, interstate crashes, and drowsy or intoxicated drivers.
 
-(![EDA](us-car-crash-analysis/images/EDA1.PNG?raw=true "Title")
-(![EDA](us-car-crash-analysis/images/EDA2.PNG?raw=true "Title")
+(![EDA](images/EDA1.PNG?raw=true "Title")
+(![EDA](images/EDA2.PNG?raw=true "Title")
