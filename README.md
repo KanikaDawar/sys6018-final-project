@@ -190,7 +190,7 @@ The resulting accuracy from random forest was 99.81% with only 61 observations i
 36 observations in medium severity misclassified. All high severity accidents were predicted with 100%
 accuracy.
 
-![Confusion Matrix for Random Forest](images/RF.PNG?raw=true "Title")
+![Confusion Matrix for Random Forest](images/RF.png?raw=true "Title")
 
 ● Similarly, we used the gbm library to run boosting algorithm on the data. We split the data into test and
 train sets of equal length, ran the gbm model with multinomial distribution and chose the result that
